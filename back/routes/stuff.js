@@ -20,6 +20,6 @@ const multer = require('../middleware/multer-config');
   router.delete('/:id', auth, stuffCtrl.deleteSauces);
  
   //mettre un like ou dislike sur une sauce
-  //router.post('/:id/like',auth, stuffCtrl.likeSauces);
+  router.post('/:id/like',auth, stuffCtrl.likeSauces);
   module.exports = router;
   

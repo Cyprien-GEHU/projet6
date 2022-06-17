@@ -11,9 +11,9 @@ const thingSchema = mongoose.Schema({
   heat:{ type: Number, required : true},
   likes:{ type: Number, required : true},
   dislikes:{type: Number, require : true},
-  userLiked:{ type: ["String <userId>"], required : true},
-  userDisliked:{ type: ["String <userId>"], required : true},
+  usersLiked:{ type: ["String <userId>"], required : true},
+  usersDisliked:{ type: ["String <userId>"], required : true},
 
 });
 
-module.exports = mongoose.model('thing', thingSchema);
+module.exports = mongoose.model('Thing', thingSchema);
